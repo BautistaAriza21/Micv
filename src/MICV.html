@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi CV</title>
+    <link href="../src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../node_modules/@flaticon/flaticon-uicons/css/all/all.css">
+
+
+</head>
+
+<body class="dark:bg-negro">
+    <header class="">
+        <nav class="bg-marron dark:bg-negro dark:border-b-2 dark:border-marron px-3 py-3 ">
+            <div class="flex mx-auto items-center justify-between">
+                <!-- Logo al comienzo del lado izquierdo -->
+                <img src="../Logo/LOGOBA4.png" class="h-20 dark:hidden" alt="">
+                <img src="../Logo/LOGOBA3.png" class="h-20 hidden dark:block" alt="">
+
+
+                <!-- Menú de navegación en interfaz PC -->
+                <ul class="flex  flex-wrap sm:hidden">
+                    <li class="mx-3 text-white font-Roboto self-center dark:text-marron">Experiencia Laboral</li>
+                    <li class="mx-3 text-white font-Roboto self-center dark:text-marron">Estudios</li>
+                    <li class="mx-3 text-white font-Roboto self-center dark:text-marron">Proyectos</li>
+                    <li class="mx-3 text-white font-Roboto self-center dark:text-marron">Contacto</li>
+                    <!-- <li class="mx-3 "><button class="cursor-pointer dark:text-marron dark:hidden" id="darkmode"><i
+                                class="fi fi-rr-sun text-white"></i></button></li> -->
+                    <!-- <li class=" hidden dark:block"><button class="" id="darkmode2"><i
+                                class="fi fi-ss-moon text-marron "></i></button></li> -->
+                   
+                
+                </ul>
+     
+                <div class="m-0">
+                   <button class="cursor-pointer dark:text-marron sm:hidden lg:block md:block dark:hidden" id="darkmode"><i class="fi fi-rr-sun text-2xl text-white "></i></button>
+
+                       <button class="" id="darkmode2"><i class="fi fi-ss-moon text-marron dark:sm:hidden dark:md:block dark:block text-2xl"></i></button>
+
+                       <script src="../darkmode.js"></script>
+                       <script src="../darkmode2.js"></script>
+                 </div>
+
+                <!-- Botón de menú en dispositivos móviles -->
+                <div class="md:hidden lg:hidden">
+                    <button id="toggleBtn" class="block border-2 rounded-md md:hidden p-2 hover:bg-white dark:bg-negro">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 text-white hover:text-marron dark:text-white" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Menú de navegación principal (oculto por defecto) -->
+            <ul class="menu lg:hidden md:hidden" id="menu">
+                <li class="py-2 text-white font-Roboto dark:text-marron"><a href="#">Experiencia Laboral</a></li>
+
+                <li class="py-2 text-white font-Roboto dark:text-marron"><a href="#">Estudios</a></li>
+
+                <li class="py-2 text-white font-Roboto dark:text-marron"><a href="#">Proyectos</a></li>
+
+                <li class="py-2 text-white font-Roboto dark:text-marron"><a href="#">Contacto</a></li>
+
+                <li class="mx-3"><button class="cursor-pointer dark:text-marron dark:hidden" id="darkmode1"><i
+                            class="fi fi-rr-sun text-white"></i></button></li>
+                <li class=" hidden dark:block"><button class="" id="darkmode3"><i
+                            class="fi fi-ss-moon text-marron "></i></button></li>
+                <script src="../darkmode1.js"></script>
+                <script src="../darkmode3.js"></script>
+            </ul>
+        </nav>
+
+        <script>
+            const toggleBtn = document.getElementById('toggleBtn');
+            const menu = document.getElementById('menu');
+
+            toggleBtn.addEventListener('click', () => {
+                menu.classList.toggle('hidden'); // Agregamos o quitamos la clase 'hidden' para mostrar u ocultar el menú
+            });
+        </script>
+
+    </header>
+
+    <main>
+
+        <div
+            class="max-w-md mx-auto dark:bg-negro bg-white rounded-xl shadow-lg shadow-marron overflow-hidden md:max-w-2xl sm:hidden lg:hidden md:block border-2 border-marron my-10">
+            <div class="md:flex">
+                <div class="md:shrink-0">
+                    <img class="h-48 w-full object-cover md:h-full md:w-48" src="../IMG/bauti.jpg"
+                        alt="Modern building architecture">
+                </div>
+
+
+
+                <div class="mx-4 my-4 selection:bg-marron selection:text-white font-Roboto dark:text-marron">
+                    <img src="../IMG/INFORMACION.png" class="mx-auto mb-4" alt="">
+                    Hola como estas?, para la persona que este leyendo este CV es un gusto conocerte
+                    mi nombre es <span class="text-marron font-bold">Bautista Ariza</span>, tengo 22 años soy <span
+                        class="text-marron font-bold">Diseñador UX/UI</span> y <span
+                        class="text-marron font-bold">Desarrollador web</span>
+                    siempre en busca de nuevos conocimientos.
+                    Me gusta aprender y desarrollar mis habilidades manteniendome actualizado con
+                    las ultimas tendencias. Estoy abierto a nuevos desafios y me considero una persona
+                    creativa, orientada a los resultados y dispuesto a colaborar en equipo.
+                    Mi objetivo es utilizar mis conocimientos para ofrecer soluciones innovadoras y eficientes en el
+                    campo del diseño.
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div
+            class="dark:bg-negro mx-10 my-10  space-x-3 rounded-lg overflow-hidden shadow-lg shadow-marron border-2 border-marron md:hidden lg:block">
+
+            <div class=" md:flex md:space-x-6">
+                <div class="">
+                    <img src="../IMG/bauti.jpg" class="sm:h-full md:max-w-md md:min-h-full lg:h-50 lg: " alt="">
+                </div>
+
+
+
+                <div class="my-4">
+                    <img src="../IMG/INFORMACION.png" class="mx-auto" alt="">
+
+                    <div class="mx-4 my-4 indent-6  selection:bg-marron selection:text-white font-Roboto dark:text-marron ">
+                        Hola como estas?, para la persona que este leyendo este CV es un gusto conocerte
+                        mi nombre es <span class="text-marron font-bold">Bautista Ariza</span>, tengo 22 años soy <span
+                            class="text-marron font-bold">Diseñador UX/UI</span> y <span
+                            class="text-marron font-bold">Desarrollador web</span>
+                        siempre en busca de nuevos conocimientos.
+                        Me gusta aprender y desarrollar mis habilidades manteniendome actualizado con
+                        las ultimas tendencias. Estoy abierto a nuevos desafios y me considero una persona
+                        creativa, orientada a los resultados y dispuesto a colaborar en equipo.
+                        Mi objetivo es utilizar mis conocimientos para ofrecer soluciones innovadoras y eficientes en el
+                        campo del diseño.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="flex justify-center lg:w-screen dark:bg-negro">
+            <div class=" py-10 px-10 ">
+                <div class="border-2 border-marron rounded-xl py-4 shadow-lg shadow-marron selection:bg-marron selection:text-white">
+                    <img src="../IMG/MI EXPERIENCIA LABORAL.png" class="mx-auto" alt="">
+
+                    <p class="text-center mx-10 mt-4  font-Roboto dark:text-marron">
+                        Estuve trabajando para una empresa llamada
+                        Dark Star Group, mi rol asignado fue supervisor y
+                        tenia la tarea encargada de cuidar productos
+                        importados.
+                    </p>
+
+                    <p class="text-center mt-4 mx-10 font-Roboto dark:text-marron">
+                        Trabaje para esta empresa durante tres años
+                        (Septiembre 2019 - Febrero 2023)
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="flex lg:justify-center dark:bg-negro">
+            <div class="px-10 py-10">
+                <div class="border-2 border-marron shadow-lg shadow-marron rounded-xl px-3 py-3">
+                    <img src="../IMG/ESTUDIOS.png" class="mx-auto" alt="">
+
+                    <div class="flex flex-col lg:justify-center mt-4 selection:bg-marron selection:text-white">
+                        <p class="px-4 py-2 font-Roboto dark:text-marron">He adquirido un nivel de ingles intermedio
+                            (Nivel B1),
+                            desarrollando el idioma a base de sitios educativos como "Open English, EF International
+                            Lenguaje Center".</p>
+
+                        <p class="px-4 py-2 font-Roboto dark:text-marron">Tengo conocimientos en lenguajes de diseño y
+                            desarrollo web
+                            como "HTML5, Tailwind CSS y Bootstrap 5", que me permiten crear páginas web responsivas y
+                            adaptadas a diferentes interfaces.
+                            Logre obtener todas estas aptitudes mediante cursos.</p>
+
+                        <p class="px-4 py-2 font-Roboto dark:text-marron">Puedo personalizar imágenes utilizando la
+                            herramienta de diseño
+                            grafico "Fotoshop" </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+       
+            <div class="flex justify-center">
+                <div class="px-10 py-10">
+                    <div class="border-2 border-marron px-3 py-3 rounded-xl shadow-lg shadow-marron">
+                        <img src="../IMG/PROYECTOS.png" class="mx-auto" alt="">
+
+                        <div class=" dark:text-marron text-center mt-4 selection:bg-marron selection:text-white">
+                            Tuve la gran oportunidad de colaborar con un gran equipo, haciendo uso de la metodolagia
+                            scrum para realizar este proyecto: <br>
+
+                           <span class="text-marron">Link del Proyecto</span> 
+                        </div>
+
+                        
+
+                        <div class="dark:text-marron text-center mt-4 selection:bg-marron selection:text-white">
+                            Proyectos realizados por mi:  <br>
+
+                            <span class="text-marron">Link del Proyecto</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+
+<!-- 
+        <div class="">
+            <div class="bg-gris/20 dark:bg-negro dark:border-marron dark:border-y-2 my-10 ">
+                <div><img src="../IMG/REALIZADO CON.png" class="mx-auto py-6" alt=""></div>
+                <div class="flex justify-center shrink-0 sm:flex-col md:flex-row">
+                    <img src="../IMG/Logo+HTML5.webp" class="md:h-40 sm:h-full " alt="">
+                    <img src="../IMG/tailwindcss_logo_icon_170649.png" class="md:h-40 sm:h-2/4 dark:hidden " alt="">
+                    <img src="../IMG/tailwindcss_logo_icon_1.png" class="hidden dark:block sm:h-2/4 md:h-40" alt="">
+                </div>
+            </div>
+        </div> -->
+
+
+        <div class="container mx-auto ">
+            <div class="max-w-md mx-auto my-6">
+<!--                 
+                <div
+                    class="dark:bg-negro dark:shadow-lg dark:shadow-marron bg-white rounded-lg shadow-marron shadow-md border-2 border-marron mb-6">
+                    <div class="p-4 cursor-pointer flex justify-between items-center" onclick="toggleAccordion(this)">
+                        <h2 class="text-lg font-roboto font-semibold dark:text-marron selection:bg-marron selection:text-white">¿Porque los elijo a ustedes?</h2>
+                        <svg class="w-6 h-6 dark:text-marron text-marron transform transition-transform duration-300"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="px-4 py-2 hidden dark:rounded-b-lg  dark:bg-negro">
+                        <p class="dark:text-marron selection:bg-marron selection:text-white">Porque estoy comprometido/a a aprender y crecer en el sector de
+                            diseño y desarrollo,
+                            cuento con una base sólida de habilidades técnicas y la motivación para contribuir al
+                            equipo, aprender de manera constante para impulsar el éxito de la empresa.</p>
+                    </div>
+                </div> -->
+
+                <!-- Segundo elemento del acordeón -->
+                <div
+                    class="dark:bg-negro dark:shadow-lg dark:shadow-marron bg-white rounded-lg shadow-marron shadow-md border-2 border-marron mb-6">
+                    <div class="p-4 cursor-pointer flex justify-between items-center" onclick="toggleAccordion(this)">
+                        <h2 class="text-lg font-roboto font-semibold dark:text-marron selection:bg-marron selection:text-white">¿Que es lo que quiero ofrecer?
+                        </h2>
+                        <svg class="w-6 h-6 dark:text-marron text-marron transform transition-transform duration-300"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="px-4 py-2 hidden dark:rounded-b-lg dark:bg-negro">
+                        <p class="dark:text-marron selection:bg-marron selection:text-white">Mi entusiasmo para contribuir al equipo y mi disposición para
+                            mantenerme en constante aprendizaje</p>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- Tercer elemento del acordeón -->
+                <div class="dark:bg-negro dark:shadow-lg dark:shadow-marron bg-white rounded-lg shadow-marron shadow-md border-2 border-marron mb-6">
+                    <div class="p-4 cursor-pointer flex justify-between items-center" onclick="toggleAccordion(this)">
+                        <h2 class=" font-roboto font-semibold dark:text-marron selection:bg-marron selection:text-white">¿Como me adapto a nuevos desafios
+                            y entornos de
+                            trabajo?</h2>
+                        <svg class="md:w-6 md:h-6 sm:w-10 sm:h-10 dark:text-marron text-marron transform transition-transform duration-300"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="px-4 py-2 hidden dark:rounded-b-lg dark:bg-negro">
+                        <p class="dark:text-marron selection:bg-marron selection:text-white">Aprovecho mis habilidades de resolución de problemas y comunicación
+                            para colaborar
+                            eficazmente con colegas y abordar desafíos de manera efectiva. Estoy motivado/a por el
+                            crecimiento personal y profesional, lo que me impulsa a enfrentar nuevos desafíos con
+                            entusiasmo y determinación.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+
+        <script>
+            function toggleAccordion(element) {
+                const content = element.nextElementSibling;
+                content.classList.toggle('hidden');
+                element.querySelector('svg').classList.toggle('rotate-180');
+            }
+        </script>
+
+
+       
+         
+      
+
+
+    </main>
+
+    <footer class="dark:bg-negro dark:border-t-2 dark:border-marron bg-marron mt-10">
+        <div class=" flex md:justify-between justify-center flex-wrap  md:flex-nowrap mx-4 md:p-4 ">
+              <div class="">
+                <img src="../Logo/LOGOBA4.png" class="h-20 dark:hidden sm:mx-auto md:mx-0" alt="">
+                <img src="../Logo/LOGOBA3.png" class="h-20 hidden dark:block sm:mx-auto md:mx-0" alt="">
+                  
+                <div class="dark:text-marron sm:text-center  text-white m-0">
+                    @Todos los derechos reservados
+                </div>
+              </div>
+
+              <div class="sm:text-center md:text-end sm:my-2">
+                <span class="dark:text-marron  text-white font-Anton font-bold text-28">Contacto</span>
+          
+                <div class="dark:text-marron text-white font-Roboto">+54-11 - 6262 - 6302  </div>
+                <div class="dark:text-marron text-white font-Roboto">bautistaariza2001@gmail.com </div>
+                <div class="dark:text-marron text-white font-Roboto">www.linkedin.com/in/bautista-ariza-518144189</div>
+              </div>
+           </div>
+
+       <hr class="mx-4 divide-x-2  divide-white p-2">
+
+       <div class="font-Roboto text-center text-white dark:text-marron ">
+          Desarrollado por: <span class="font-bold">Bautista Ariza</span>
+       </div>
+
+    </footer>
+  
+
+
+</body>
+
+</html>
